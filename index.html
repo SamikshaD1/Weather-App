@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+            rel="stylesheet">
+        <style>
+  </style>
+    </head>
+    <style>
+    body {
+        background-color: rgba(54, 3, 105, 1); 
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+}
+ .app-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    flex-direction: column;
+ }
+
+.app-header{ 
+    font-size: 100px;
+    font-weight: 700;
+}
+#btn{
+    width: 492px;
+    height: 58px;
+}
+a {
+    font-size: 500;
+    border-style: none;
+}
+
+.error-location {
+   color: red;
+}
+@media screen and (max-width: 400px) {
+            .app-header {
+                font-size: 40px;
+            }
+
+            #btn {
+                width: 200px;
+                height: 30px;
+            }
+            .app-container{
+                display: flex;
+                align-items: center;
+            }
+            
+        }
+
+   </style>
+    <body>
+        <div class="app-container">
+            <h1 class="app-header">Weather App</h1>
+            <button id="btn">Fetch Data</button>
+
+            <p class="error-location"></p>
+        </div>
+        <script>
+            
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

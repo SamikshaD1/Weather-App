@@ -1,0 +1,149 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(54, 3, 105, 1);
+  color: white;
+  font-family: Montserrat;
+}
+.app-header {
+  margin-bottom: 24px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.app-p {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.lat-long {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5vw;
+}
+
+.paraOne,
+.paratwo {
+  border: 1px solid black;
+  padding: 30px;
+  background-color: rgb(35, 1, 69);
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.location-info {
+  margin-bottom: 24px;
+}
+
+.map-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.map-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
+  margin: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+}
+.map-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.map-item p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.data-part {
+  background-color: white;
+  color: rgba(54, 3, 105, 1);
+  padding: 20px;
+}
+
+.weather-data-title {
+  font-size: 54px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.app-container {
+  padding: 40px;
+}
+.weather-data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span {
+  background: rgba(54, 3, 105, 1);
+  color: white;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px;
+}
+#weather-info {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+#weather-info iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .app-header {
+    font-size: 40px;
+  }
+
+  #btn {
+    width: 200px;
+    height: 30px;
+  }
+
+  #weather-info {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+  }
+
+  #weather-info iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .lat-long {
+    gap: 0;
+  }
+}
