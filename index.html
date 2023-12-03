@@ -33,10 +33,14 @@
 #btn{
     width: 492px;
     height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 a {
     font-size: 500;
     border-style: none;
+    background-color: white;
 }
 
 .error-location {
@@ -51,6 +55,7 @@ a {
                 width: 200px;
                 height: 30px;
             }
+            
             .app-container{
                 display: flex;
                 align-items: center;
@@ -62,7 +67,7 @@ a {
     <body>
         <div class="app-container">
             <h1 class="app-header">Weather App</h1>
-            <button id="btn">Fetch Data</button>
+            <a id="btn" href="./Pages/weather.html">Fetch Data</a>
 
             <p class="error-location"></p>
         </div>

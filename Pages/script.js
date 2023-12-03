@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const queryParams = new URLSearchParams(window.location.search);
-    const latitude = queryParams.get('lat');
-    const longitude = queryParams.get('lon');
+    const latitude = localStorage.getItem('latitude');
+    const longitude = localStorage.getItem('longitude');
+
 
     if (latitude && longitude) {
         fetchWeatherData(latitude, longitude);

@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
             navigator.geolocation.getCurrentPosition(
                 (position) => {
                     const { latitude, longitude } = position.coords;
-                    window.location.href = `/Pages/weather.html?lat=${latitude}&lon=${longitude}`;
+                    // Store coordinates in localStorage
+                    localStorage.setItem('latitude', latitude);
+                    localStorage.setItem('longitude', longitude);
+
                 },
                 () => {
                     document.querySelector(".error-location").innerHTML = "Error getting location: User denied Geolocation";
